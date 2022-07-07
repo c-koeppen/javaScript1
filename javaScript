@@ -1,0 +1,30 @@
+<!-- Java Script Exercises -->
+
+<!-- Dog Age Calculator -->
+var dogAge = prompt("How old is your dog?");
+var humanAge = ((dogAge - 2) * 4) + 21;
+alert("Your dog is " + humanAge + " years old in human years.");
+
+<!-- BMI Calculator (kg/m) -->
+function bmiCalculator(weight, height){
+    var bmi = weight / (height * height);
+    return bmi;
+}
+
+<!-- Lovescore Calculator -->
+prompt("What is your name?");
+prompt("What is their name?");
+var lovescore = Math.random()*100;
+lovescore = Math.floor(lovescore) + 1;
+alert("Your lovescore is " + lovescore + "%!");
+
+<!-- Guest List Exercise -->
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+
+var guestName = prompt ("What is your name?");
+
+if (guestList.includes(guestName)) {
+    alert("Welcome!");
+} else {
+    alert("Sorry, maybe next time.")
+}
